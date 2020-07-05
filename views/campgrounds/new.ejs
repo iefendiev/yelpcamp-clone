@@ -1,0 +1,28 @@
+<%- include("../partials/header")%>
+<div class="container">
+	<div class="row">
+		<h1 style="text-align:center">Submit a camp spot!</h1>
+		<div style="width:30%; margin:25px auto;">
+			<form class="camp-edit" action="/campgrounds" method="POST">
+				<div class="form-group">
+								<input type="text" class="form-control" name="FormNameValue"	 placeholder="Camp Name Title">
+				</div>
+				<div class="form-group">
+								<input type="number" class="form-control" name="PriceValue"	 placeholder="Price / Night" min="0.0" step="1">
+				</div>
+				<div class="form-group">
+									<input type="text "class="form-control" name="FormURLValue" placeholder="Image Url">
+				</div>
+				<div class="form-group">
+									<input type="text "class="form-control" name="FormDescription" placeholder="Description!">
+				</div>
+			<button class="btn btn-lg btn-default btn-block btn-primary">		Submit	</button>
+			</form>
+			<a class="link-camps" href="/campgrounds">View All Campgrounds</a>	
+		</div>
+		
+	</div>
+
+</div>
+
+<%- include("../partials/footer")%>

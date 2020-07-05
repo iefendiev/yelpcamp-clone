@@ -1,0 +1,16 @@
+<%- include("partials/header")%>
+
+
+<div class="container register">
+	<h1 class="register-header">
+	Register Form 
+	</h1>
+
+	<form class="register-form" action="/register" method="POST">
+		<input type="text" name="username" placeholder="Username">
+		<input type="password" name="password" placeholder="Password">
+		<input class="register-button" type="Submit" value="Submit!">
+	</form>
+
+</div>
+<%- include("partials/footer")%>

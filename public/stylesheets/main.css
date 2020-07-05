@@ -1,0 +1,114 @@
+body{
+background: #00bf8f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.thumbnail img{
+	width: 100%;
+	height:auto;
+}
+.thumbnail{
+	padding:0;
+}
+
+.thumbnail .caption-full{
+	padding:1.3rem;
+}
+.jumbotron{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+h1{
+	color:white;
+}
+.ortala{
+	height:70vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+
+.ortala a{
+	font-size:2rem;
+	color:white;
+	
+}
+
+
+#delete-form, #comment-delete-form{
+	display:inline;
+}
+
+/* Login Styles */
+
+.login, .register{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	margin-top:10rem;
+}
+
+.login-header, .register-header{
+	margin-bottom:5rem;
+}
+
+.login-form, .register-form{
+	display:flex;
+	flex-direction:column;
+	width:30%;
+}
+
+.login-form input, .register-form input{
+	padding:1rem 2rem;
+	margin: 0.6rem 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+}
+
+.login-button, .register-button{
+	background-color: rgba(151,151,151,0.3) !important;
+	border:none !important;
+}
+
+.login-button:hover, .register-button:hover{
+	background-color: rgba(151,151,151,0.5) !important;
+}
+
+.comment-edit, .camp-edit{
+	margin-bottom:2rem;
+}
+
+.link-camps{
+	display:flex;
+	justify-content:center;
+	font-size:2rem;
+	color:#B9B3C8 !important;
+	font-weight: 600;
+	margin-top:2rem;
+}
+
+.link-camps:hover{
+	display:flex;
+	justify-content:center;
+	font-size:2rem;
+	color:#8E80B1 !important;
+	font-weight: 600;
+	margin-top:2rem;
+}
+.link-camps-2{
+	display:flex;
+	justify-content:center;
+	font-size:2rem;
+	color:#B9B3C8 !important;
+	font-weight: 500;
+	margin-top:2rem;
+}
+
+
