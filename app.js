@@ -64,7 +64,7 @@ app.listen("3000", function(){
 })
 */
 
-var port = process.evn.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 app.lister(port, function(){
 	console.log("Deployed Yelp Camp has started")
