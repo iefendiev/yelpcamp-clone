@@ -58,6 +58,15 @@ app.use("/", authRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
+/*
 app.listen("3000", function(){
 	console.log("YelpCamp has started")
 })
+*/
+
+var port = process.evn.PORT || 3000;
+
+app.lister(port, function(){
+	console.log("Deployed Yelp Camp has started")
+})
+
