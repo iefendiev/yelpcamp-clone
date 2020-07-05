@@ -66,7 +66,7 @@ app.listen("3000", function(){
 
 var port = process.env.PORT || 3000;
 
-app.lister(port, function(){
+app.listen(port, function(){
 	console.log("Deployed Yelp Camp has started")
 })
 
