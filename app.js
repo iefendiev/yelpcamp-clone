@@ -18,9 +18,9 @@ var commentRoutes 	  = require("./routes/comments"),
 // mongodb+srv://ipek:<password>@cluster0.cwnrv.mongodb.net/<dbname>?retryWrites=true&w=majority
 // DEPLOY İÇİN YARATTIĞIMIZ CONNECTION as string
 
-// mongoose.connect("mongodb://localhost/yelp_camp_v6", {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useUnifiedTopology: true});
 
-
+/*BURASI HEROKU İÇİN key value eklendi
 mongoose.connect("mongodb+srv://ipek:ipek1!@cluster0.cwnrv.mongodb.net/yelp_camp_mongolab?retryWrites=true&w=majority", {
 	useNewUrlParser: true, 
 	useCreateIndex:true, 
@@ -32,7 +32,9 @@ mongoose.connect("mongodb+srv://ipek:ipek1!@cluster0.cwnrv.mongodb.net/yelp_camp
 	// 1 argümanın varsa paranteze gerek yok arrow functionlarda
 	console.log("ERROR", err.message)
 });
-
+*/
+// terminale : export DATABASEURL=mongodb://localhost/yelp_camp_v6 yaz goorm için database export
+// console.log(process.env.DATABASEURL)
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
