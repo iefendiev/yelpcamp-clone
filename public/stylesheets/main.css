@@ -6,10 +6,13 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
 }
 
 .thumbnail img{
-	object-fit: cover;
-    max-height: 150px;
+	
 	width: 100%;
 	height:auto;
+}
+.img-fit{
+	object-fit: cover;
+    max-height: 150px;
 }
 .thumbnail{
 	padding:0;
