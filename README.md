@@ -6,5 +6,7 @@ This is a project from Colt Steele's Udemy web-developement course.
 Made with
 Node.js
 Express
-MongoDB
-Passport for auth
+MongoDB and
+Passport for auth purposes
+
+![YelpCamp Snapshot](/public/screenshot/Capture.JPG)
